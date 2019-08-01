@@ -39,6 +39,9 @@ int x = 5, y = 6, z = 50;
 // https://www.w3schools.com/java/java_data_types.asp
 
 // Primitive: byte, short, int, long, float, double, boolean, char
+// Primitive types always have a value.
+// Start with lowercase letter.
+// Size depends on data type.
 /*
 long myNum = 15000000000L;
 float myFloat = 5.75f;
@@ -50,11 +53,31 @@ float f1 = 35e3f;
 double d1 = 12E4d;
 */
 
-// Non-primitive: String, Arrays, Classes
+// Non-primitive: String, Arrays, Classes, Interface
 // String
 // Non-primitive data type because it refers to an OBJECT.
 // Has methods used to perform certain operations on strings.
+// Value can be 'null'.
+// Non-primitive types start with an uppercase letter.
 
+// Java Type Casting
+// Assigning a value of one primitive data type to another.
+// 1. Widening Casting (automatic) - converting a smaller type to a larger type size
+// byte -> short -> char -> int -> long -> float -> double
+/*
+  int myInt = 9;
+  double myDouble = myInt; => produces '9.0'
+*/
+// 2. Narrowing Casting (manual) - converting a larger type to a smaller type size
+// double -> float -> long -> int -> char -> short -> byte
+// This is done by placing the type in parentheses in front of the value.
+/*
+  double myDouble = 9.78;
+  int myInt = (int) myDouble; => produces '9'
+*/
+
+// Java Operators
+// https://www.tutorialspoint.com/java/java_basic_operators
 
 
 
