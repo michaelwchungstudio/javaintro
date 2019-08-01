@@ -17,12 +17,6 @@ public class MyClass {
 }
 */
 
-// The 'main' method
-// The main() method is required and any code inside will be executed.
-/*
-public static void main(String[] args)
-/*
-
 
 
 
