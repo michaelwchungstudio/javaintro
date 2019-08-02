@@ -110,7 +110,48 @@ double d1 = 12E4d;
   ex. String result = (time < 18) ? "Good day." : "Good evening.";
 */
 
+// Java Switch statement
+// Used to select one of many code blocks to be executed.
+/*
+  switch(expression) {
+    case x:
+      // code block
+      break;
+    case y:
+      // code block
+      break;
+    default:
+      // code block
+}
+*/
+// > switch expression is evaluated once.
+// > value of expression compared with case values.
+// 'break' exits the code block.
+// 'default' specifies code block to run if there is no case match (similar to else).
 
+// Java While Loop
+// executes as long as the specified condition is true.
+// variable in condition should change within the code block, otherwise infinite looping can occur.
+/*
+  while (condition) {
+    // code block
+  }
+*/
+// Do/While Loop
+// executes a block of code once before checking if the condition is true, then it will repeat the loop as long as the condition is true.
+/*
+  do {
+    // code block
+}
+while (condition);
+*/
+
+// Java For Loop
+// Order: single execute (often setting a variable); condition; executed after code block
+/*
+  for (int i = 0; i < 5; i++) { }
+*/
+// Java For-Each Loop
 
 
 
