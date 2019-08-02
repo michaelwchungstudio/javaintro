@@ -79,7 +79,36 @@ double d1 = 12E4d;
 // Java Operators
 // https://www.tutorialspoint.com/java/java_basic_operators
 
+// Java Strings
+/*
+  String txt = "herpaderpderp";
+  txt.length()
+  txt.toUpperCase(), txt.toLowerCase()
+  txt.indexOf("derp")
+*/
+// The backslash escape character (\) turns special characters (ex. ", \, ') into string characters.
+// Adding a string and number results in string concatenation.
 
+// Java Math class
+// https://www.w3schools.com/java/java_ref_math.asp
+/*
+  Math.max(x,y), Math.min(x,y)
+  Math.sqrt(x)
+  Math.abs(x)
+  Math.random() => returns a random number between 0 (incl.) and 1 (excl.)
+*/
+
+// Java Conditions, If Else statements
+/*
+  if (condition1) { }
+  else if (condition2) { }
+  else { }
+*/
+// If you only have one statement to execute (one for 'if', one for 'else'), you can use a single line format.
+/*
+  variable = (condition) ? expressionTrue : expressionFalse;
+  ex. String result = (time < 18) ? "Good day." : "Good evening.";
+*/
 
 
 
