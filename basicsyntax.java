@@ -170,11 +170,49 @@ while (condition);
 ---
   
 // Encapsulation & Access Modifiers
-// no modifier => visible within package
-// public => everywhere
-// private => only within class
+/*
+no modifier => visible within package
+public => everywhere
+private => only within class
+*/
 
 // Classes
+  
+// Establishing Initial State
+// Three mechanisms: (1) field initializers, (2) constructors, (3) initialization blocks
+/* (2) Constructors: executable code used during object creation to set initial state
+ - no return type
+ - at least one present in every class (if not explicitly written, Java will provide one)
+ - can have multiple constructors with the EXCEPTION that each has a DIFFERENT PARAMETER LIST (see: signatures)
+   Chaining Constructors & Constructor Visibility
+ - one constructor can call another using the 'this' keyword followed by the parameter list
+ - use access modifiers to control constructor visibility to limit what code can perform specific creations
+ - ex. public Passenger(int freeBags) {
+   =>     this(freeBags > 1 ? 25.0d : 50.0d);
+          this.freeBags = freeBags;
+       }
+       public Passenger(int freeBags, int checkedBags) {
+   =>     this(freeBags);
+          this.checkedBags = checkedBags;
+       }
+   =>  private Passenger(double perBagFee) {
+          this.perBagFee = perBagFee;
+       }
+*/
+/* (3) Initialization Blocks
+ - code that can be shared across ALL constructors
+ - executed as if the code were placed at the start of each constructor
+ * enclose statements in brackets outside of any method or constructor
+ - ex. public class Flight {
+          ...init...variables...
+          private boolean[] isSeatAvailable;
+    =>    {
+            isSeatAvailable = new boolean[seats]
+            for(int i = 0; i < seats; i++)
+               isSeatAvailable[i] = true;
+    =?    }
+          ...other constructors...
+       }
   
 // Method Basics
 /*
@@ -183,9 +221,11 @@ while (condition);
 */
 
 // Accessors (getter) & Mutators (setter)
-// Helpful for controlling field access, hide implementation details
-// Accessor: retrieves field value
-// Mutator: modifies field value
+/*
+Helpful for controlling field access, hide implementation details
+Accessor: retrieves field value
+Mutator: modifies field value
+*/
 
 
 
