@@ -180,6 +180,7 @@ private => only within class
   
 // Establishing Initial State
 // Three mechanisms: (1) field initializers, (2) constructors, (3) initialization blocks
+// * Order: field initialization => initialization block => constructors
 /* (2) Constructors: executable code used during object creation to set initial state
  - no return type
  - at least one present in every class (if not explicitly written, Java will provide one)
