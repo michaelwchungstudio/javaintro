@@ -165,11 +165,27 @@ while (condition);
 */
 /*
   int[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7 8}, {9, 10, 11, 12} };
+*/
 
+---
   
+// Encapsulation & Access Modifiers
+// no modifier => visible within package
+// public => everywhere
+// private => only within class
 
+// Classes
+  
+// Method Basics
+/*
+  return-type name(typed-parameter-list) { statements }
+  * return type should be void if no value is returned
+*/
 
-
+// Accessors (getter) & Mutators (setter)
+// Helpful for controlling field access, hide implementation details
+// Accessor: retrieves field value
+// Mutator: modifies field value
 
 
 
