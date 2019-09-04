@@ -138,7 +138,7 @@ double d1 = 12E4d;
   }
 */
 // Do/While Loop
-// executes a block of code once before checking if the condition is true, then it will repeat the loop as long as the condition is true.
+// executes a block of code ONCE before checking if the condition is true, then it will repeat the loop as long as the condition is true.
 /*
   do {
     // code block
@@ -152,8 +152,21 @@ while (condition);
   for (int i = 0; i < 5; i++) { }
 */
 // Java For-Each Loop
+// Executes a statement once for each member in an iterable: array/hashmap/collection/set/list
+/*
+  for(loop-variable-declaration:array) { }
+  for(String fname:fnames) { do something with fname }
+*/
 
+// Arrays / Multidimensional Arrays
+/*
+  float [] theVals1 = new float[3];
+  float [] theVals2 = { 10.0f, 11.0f, 12.0f };
+*/
+/*
+  int[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7 8}, {9, 10, 11, 12} };
 
+  
 
 
 
